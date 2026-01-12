@@ -11,42 +11,75 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Article Styling -->
   <style>
-    .article-section {max-width:900px;margin:auto}
-    .article-section article{
-      background:#ffffff;
-      padding:2rem;
-      border-radius:16px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.04)
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1f2933;
+      background: linear-gradient(180deg, #e2f6ec 0%, #ffffff 55%);
     }
-    .article-section p{color:#374151}
-    .article-section ul{padding-left:1.2rem}
+    header {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+      background: linear-gradient(135deg, #c7ead8 0%, #eaf7f1 100%);
+      border-radius: 0 0 24px 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1f2933;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #2f855a;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      max-width: 700px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      color: #4b5563;
+    }
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #2f855a;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .latest-posts{margin-top:3rem}
+    .posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+    .post-card{background:#f4fbf7;padding:1.5rem;border-radius:14px;transition:transform .2s, box-shadow .2s}
+    .post-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+    .post-card h4{margin:.5rem 0}
+    .post-card a{text-decoration:none;color:#2f855a;font-weight:600}
 
-    .latest-posts{margin-top:4rem}
-    .posts-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:1.5rem
-    }
-    .post-card{
-      background:#f9fdfb;
-      padding:1.5rem;
-      border-radius:14px;
-      transition:transform .2s
-    }
-    .post-card:hover{transform:translateY(-4px)}
-    .post-card a{
-      text-decoration:none;
-      color:#2f855a;
-      font-weight:600
+    footer {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -55,7 +88,6 @@
     <div>
       <a href="#about">About</a>
       <a href="#focus">Focus Areas</a>
-      <a href="#article">Article</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -71,7 +103,7 @@
 <section id="about">
   <h2>Our Mission</h2>
   <p>
-    To collect, analyze, and leverage sustainability and environmental data across Africa, providing actionable insights that drive informed decision-making, transparency, and measurable impact.
+    To collect, analyze, and leverage sustainability and environmental data across Africa, providing actionable insights that drive informed decision-making, transparency, and measurable impact for communities and organizations.
   </p>
 </section>
 
@@ -93,30 +125,35 @@
   </div>
 </section>
 
-<!-- ARTICLE -->
-<section id="article" class="article-section">
+<section id="article">
   <h2>Featured Article</h2>
 
-  <article>
+  <article style="background:#ffffff;padding:2rem;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,0.05)">
+
     <h3>Comparing Energy Efficiency Strategies: Lessons from Sweden for Nigeria</h3>
 
-    <p>Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions...</p>
+    <p>
+      Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions. As the article explains, Sweden consumes large amounts of energy per capita; however, it also maintains low carbon emissions through deliberate energy choices which are rooted in renewables and nuclear power. By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization of available renewable resources, despite vast natural potential in the country.
+    </p>
 
-    <p>By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization of renewables.</p>
+    <p>
+      One of Sweden’s strongest advantages is its diversified renewable mix: hydropower, bioenergy, wind, and nuclear energy which collectively account for nearly all electricity generation. In 2023, <em>“98.5 per cent of Sweden’s electricity came from renewable sources or nuclear power”</em> (Swedish Institute, 2024). This contrasts sharply with Nigeria’s reality, where electricity generation relies heavily on gas-fired turbines and coal plants. Frequent grid failures force households and businesses to depend on private generators; an outcome that is costly, inefficient, and polluting! Nigeria’s energy choices therefore increase emissions while also delivering unreliable supply.
+    </p>
 
-    <p><em>“98.5% of Sweden’s electricity came from renewable or nuclear sources”</em> (Swedish Institute, 2024).</p>
+    <p>
+      Furthermore, another area where Sweden excels is policy design. The Electricity Certificate System obliges retailers to purchase green electricity, while producers are incentivized to generate renewable power. Nigeria lacks that type of coherent market-based framework; although renewable energy policies exist, enforcement is weak, and investment security remains quite low, solar and wind projects are often small-scale and fragmented (IEA, 2023).
+    </p>
 
-    <p>Nigeria relies heavily on gas turbines and generators, which are costly and polluting.</p>
+    <p>
+      To advise Nigeria’s government from an efficiency standpoint, as an Energy Efficiency Analyst myself, three priorities stand out. First, Nigeria should aggressively scale decentralized renewables, particularly solar mini-grids; to serve rural and peri-urban communities (this would reduce generator usage). Second, policy incentives similar to Sweden’s certification system should be introduced, encouraging utilities and private investors to prioritize renewables rather than fossil fuels. Third, Nigeria must invest in energy efficiency technologies such as heat pumps and combined heat-and-power systems; these are largely absent today, yet they could significantly reduce wasted energy across industries.
+    </p>
 
-    <p>Three priorities stand out:</p>
+    <p>
+      In conclusion, Nigeria’s challenge is not resource scarcity – it is governance and execution. As Sweden demonstrates, strategic planning, long-term policy consistency, and investment in renewables can deliver reliable energy with low emissions; Nigeria can follow this path if reforms are taken seriously.
+    </p>
 
-    <ul>
-      <li>Scale decentralized solar mini-grids</li>
-      <li>Introduce renewable policy incentives</li>
-      <li>Invest in energy efficiency technologies</li>
-    </ul>
+    <p><strong>Written by:</strong> Adebowale Olusegun</p>
 
-    <p><strong>Written by:</strong> Adebowale Olusegun J</p>
   </article>
 
   <!-- LATEST POSTS -->
