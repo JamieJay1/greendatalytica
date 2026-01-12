@@ -13,6 +13,38 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Article Styling -->
+  <style>
+    .article-section {max-width:900px;margin:auto}
+    .article-section article{
+      background:#ffffff;
+      padding:2rem;
+      border-radius:16px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.04)
+    }
+    .article-section p{color:#374151}
+    .article-section ul{padding-left:1.2rem}
+
+    .latest-posts{margin-top:4rem}
+    .posts-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.5rem
+    }
+    .post-card{
+      background:#f9fdfb;
+      padding:1.5rem;
+      border-radius:14px;
+      transition:transform .2s
+    }
+    .post-card:hover{transform:translateY(-4px)}
+    .post-card a{
+      text-decoration:none;
+      color:#2f855a;
+      font-weight:600
+    }
+  </style>
 </head>
 
 <body>
@@ -36,15 +68,13 @@
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>Our Mission</h2>
   <p>
-    To collect, analyze, and leverage sustainability and environmental data across Africa, providing actionable insights that drive informed decision-making, transparency, and measurable impact for communities and organizations.
+    To collect, analyze, and leverage sustainability and environmental data across Africa, providing actionable insights that drive informed decision-making, transparency, and measurable impact.
   </p>
 </section>
 
-<!-- FOCUS -->
 <section id="focus">
   <h2>What We Focus On</h2>
   <div class="grid">
@@ -64,66 +94,59 @@
 </section>
 
 <!-- ARTICLE -->
-<section id="article">
+<section id="article" class="article-section">
   <h2>Featured Article</h2>
 
   <article>
     <h3>Comparing Energy Efficiency Strategies: Lessons from Sweden for Nigeria</h3>
 
-    <p>
-      Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions.
-      Sweden consumes large amounts of energy per capita; however, it maintains low carbon emissions through deliberate
-      energy choices rooted in renewables and nuclear power.
-    </p>
+    <p>Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions...</p>
 
-    <p>
-      By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization
-      of available renewable resources, despite vast natural potential in the country.
-    </p>
+    <p>By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization of renewables.</p>
 
-    <p>
-      One of Sweden’s strongest advantages is its diversified renewable mix: hydropower, bioenergy, wind, and nuclear
-      energy which collectively account for nearly all electricity generation. In 2023,
-      <em>“98.5 per cent of Sweden’s electricity came from renewable sources or nuclear power”</em>
-      (Swedish Institute, 2024).
-    </p>
+    <p><em>“98.5% of Sweden’s electricity came from renewable or nuclear sources”</em> (Swedish Institute, 2024).</p>
 
-    <p>
-      This contrasts sharply with Nigeria’s reality, where electricity generation relies heavily on gas-fired turbines
-      and coal plants. Frequent grid failures force households and businesses to depend on private generators;
-      an outcome that is costly, inefficient, and polluting. Nigeria’s energy choices therefore increase emissions
-      while also delivering unreliable supply.
-    </p>
+    <p>Nigeria relies heavily on gas turbines and generators, which are costly and polluting.</p>
 
-    <p>
-      Furthermore, another area where Sweden excels is policy design. The Electricity Certificate System obliges
-      retailers to purchase green electricity, while producers are incentivized to generate renewable power.
-      Nigeria lacks this type of coherent market-based framework; although renewable energy policies exist,
-      enforcement is weak and investment security remains low. Solar and wind projects are often small-scale
-      and fragmented (IEA, 2023).
-    </p>
-
-    <p>
-      To advise Nigeria’s government from an efficiency standpoint, three priorities stand out:
-    </p>
+    <p>Three priorities stand out:</p>
 
     <ul>
-      <li>Scale decentralized renewables, particularly solar mini-grids for rural and peri-urban communities.</li>
-      <li>Introduce policy incentives similar to Sweden’s certification system.</li>
-      <li>Invest in energy efficiency technologies such as heat pumps and combined heat-and-power systems.</li>
+      <li>Scale decentralized solar mini-grids</li>
+      <li>Introduce renewable policy incentives</li>
+      <li>Invest in energy efficiency technologies</li>
     </ul>
-
-    <p>
-      In conclusion, Nigeria’s challenge is not resource scarcity – it is governance and execution.
-      As Sweden demonstrates, strategic planning, long-term policy consistency, and investment in renewables
-      can deliver reliable energy with low emissions.
-    </p>
 
     <p><strong>Written by:</strong> Adebowale Olusegun J</p>
   </article>
+
+  <!-- LATEST POSTS -->
+  <div class="latest-posts">
+    <h3>Latest Posts</h3>
+
+    <div class="posts-grid">
+
+      <div class="post-card">
+        <h4>Decentralized Energy: Why Mini-Grids Matter</h4>
+        <p>How solar mini-grids can transform rural electrification.</p>
+        <a href="#">Read more →</a>
+      </div>
+
+      <div class="post-card">
+        <h4>Using Data for Climate Policy</h4>
+        <p>How analytics can shape environmental decision-making.</p>
+        <a href="#">Read more →</a>
+      </div>
+
+      <div class="post-card">
+        <h4>Urban Energy Challenges in Africa</h4>
+        <p>Understanding demand patterns in growing cities.</p>
+        <a href="#">Read more →</a>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: contact@greendatalytica.world</p>
