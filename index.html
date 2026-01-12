@@ -6,6 +6,9 @@
   <title>GreenDatalytica | Data for Sustainable Impact</title>
   <meta name="description" content="GreenDatalytica is a data-driven civil society organization advancing environmental sustainability and social impact across Africa." />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +48,6 @@
       padding:1rem;
       border-radius:12px;
       backdrop-filter:blur(8px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 4rem;
-    }
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -96,6 +93,33 @@
     .post-card h4{margin:.5rem 0}
     .post-card a{text-decoration:none;color:#2f855a;font-weight:600}
 
+    /* Team section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .team-member {
+      background: #f4fbf7;
+      padding: 1.5rem;
+      border-radius: 14px;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .team-member:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .team-member h3 {
+      margin: 0.5rem 0;
+      color: #2f855a;
+    }
+    .team-member p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
     footer {
       padding: 2rem 1.5rem;
       text-align: center;
@@ -108,7 +132,10 @@
 
 <header>
   <nav>
-    <strong>GreenDatalytica</strong>
+    <div style="display:flex;align-items:center;gap:.6rem">
+      <img src="assets/logo.png" alt="GreenDatalytica logo" style="height:36px">
+      <strong>GreenDatalytica</strong>
+    </div>
     <div>
       <a href="#about">About</a>
       <a href="#focus">Focus Areas</a>
@@ -160,63 +187,59 @@
   </div>
 </section>
 
+<section id="team">
+  <h2>Meet the Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <h3>Adebowale Olusegun</h3>
+      <p>Co-Founder & Research Director</p>
+      <p>ceo@greendatalytica.world</p>
+    </div>
+    <div class="team-member">
+      <h3>Rajesh Mikael</h3>
+      <p>Co-Founder & Program Director</p>
+      <p>program@greendatalytica.world</p>
+    </div>
+    <div class="team-member">
+      <h3>Elizabeth Aanuoluwa</h3>
+      <p>Human Resources Director </p>
+      <p>people@greendatalytica.world</p>
+    </div>
+  </div>
+</section>
+
 <section id="article">
   <h2>Featured Article</h2>
-
   <article style="background:#ffffff;padding:2rem;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,0.05)">
-
     <p><small>Published: June 2025 • 6 min read</small></p>
-
     <h3>Comparing Energy Efficiency Strategies: Lessons from Sweden for Nigeria</h3>
-
-    <p>
-      Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions. As the article explains, Sweden consumes large amounts of energy per capita; however, it also maintains low carbon emissions through deliberate energy choices which are rooted in renewables and nuclear power. By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization of available renewable resources, despite vast natural potential in the country.
-    </p>
-
-    <p>
-      One of Sweden’s strongest advantages is its diversified renewable mix: hydropower, bioenergy, wind, and nuclear energy which collectively account for nearly all electricity generation. In 2023, <em>“98.5 per cent of Sweden’s electricity came from renewable sources or nuclear power”</em> (Swedish Institute, 2024). This contrasts sharply with Nigeria’s reality, where electricity generation relies heavily on gas-fired turbines and coal plants. Frequent grid failures force households and businesses to depend on private generators; an outcome that is costly, inefficient, and polluting! Nigeria’s energy choices therefore increase emissions while also delivering unreliable supply.
-    </p>
-
-    <p>
-      Furthermore, another area where Sweden excels is policy design. The Electricity Certificate System obliges retailers to purchase green electricity, while producers are incentivized to generate renewable power. Nigeria lacks that type of coherent market-based framework; although renewable energy policies exist, enforcement is weak, and investment security remains quite low, solar and wind projects are often small-scale and fragmented (IEA, 2023).
-    </p>
-
-    <p>
-      To advise Nigeria’s government from an efficiency standpoint, as an Energy Efficiency Analyst myself, three priorities stand out. First, Nigeria should aggressively scale decentralized renewables, particularly solar mini-grids; to serve rural and peri-urban communities (this would reduce generator usage). Second, policy incentives similar to Sweden’s certification system should be introduced, encouraging utilities and private investors to prioritize renewables rather than fossil fuels. Third, Nigeria must invest in energy efficiency technologies such as heat pumps and combined heat-and-power systems; these are largely absent today, yet they could significantly reduce wasted energy across industries.
-    </p>
-
-    <p>
-      In conclusion, Nigeria’s challenge is not resource scarcity – it is governance and execution. As Sweden demonstrates, strategic planning, long-term policy consistency, and investment in renewables can deliver reliable energy with low emissions; Nigeria can follow this path if reforms are taken seriously.
-    </p>
-
+    <p>Sweden shows a very compelling case of how high energy consumption does not have to translate into high emissions. As the article explains, Sweden consumes large amounts of energy per capita; however, it also maintains low carbon emissions through deliberate energy choices which are rooted in renewables and nuclear power. By contrast, Nigeria’s energy system is limited by inefficiencies, reliance on fossil fuel, and underutilization of available renewable resources, despite vast natural potential in the country.</p>
+    <p>One of Sweden’s strongest advantages is its diversified renewable mix: hydropower, bioenergy, wind, and nuclear energy which collectively account for nearly all electricity generation. In 2023, <em>“98.5 per cent of Sweden’s electricity came from renewable sources or nuclear power”</em> (Swedish Institute, 2024). This contrasts sharply with Nigeria’s reality, where electricity generation relies heavily on gas-fired turbines and coal plants. Frequent grid failures force households and businesses to depend on private generators; an outcome that is costly, inefficient, and polluting! Nigeria’s energy choices therefore increase emissions while also delivering unreliable supply.</p>
+    <p>Furthermore, another area where Sweden excels is policy design. The Electricity Certificate System obliges retailers to purchase green electricity, while producers are incentivized to generate renewable power. Nigeria lacks that type of coherent market-based framework; although renewable energy policies exist, enforcement is weak, and investment security remains quite low, solar and wind projects are often small-scale and fragmented (IEA, 2023).</p>
+    <p>To advise Nigeria’s government from an efficiency standpoint, as an Energy Efficiency Analyst myself, three priorities stand out. First, Nigeria should aggressively scale decentralized renewables, particularly solar mini-grids; to serve rural and peri-urban communities (this would reduce generator usage). Second, policy incentives similar to Sweden’s certification system should be introduced, encouraging utilities and private investors to prioritize renewables rather than fossil fuels. Third, Nigeria must invest in energy efficiency technologies such as heat pumps and combined heat-and-power systems; these are largely absent today, yet they could significantly reduce wasted energy across industries.</p>
+    <p>In conclusion, Nigeria’s challenge is not resource scarcity – it is governance and execution. As Sweden demonstrates, strategic planning, long-term policy consistency, and investment in renewables can deliver reliable energy with low emissions; Nigeria can follow this path if reforms are taken seriously.</p>
     <p><strong>Written by:</strong> Adebowale Olusegun</p>
-
   </article>
 
   <!-- LATEST POSTS -->
   <div class="latest-posts">
     <h3>Latest Posts</h3>
-
     <div class="posts-grid">
-
       <div class="post-card">
         <h4>Decentralized Energy: Why Mini-Grids Matter</h4>
         <p>How solar mini-grids can transform rural electrification.</p>
         <a href="#">Read more →</a>
       </div>
-
       <div class="post-card">
         <h4>Using Data for Climate Policy</h4>
         <p>How analytics can shape environmental decision-making.</p>
         <a href="#">Read more →</a>
       </div>
-
       <div class="post-card">
         <h4>Urban Energy Challenges in Africa</h4>
         <p>Understanding demand patterns in growing cities.</p>
         <a href="#">Read more →</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -236,7 +259,7 @@
 </section>
 
 <footer>
-  © 2026 GreenDatalytica. All rights reserved.
+  © 2026 GreenDatalytica Initiative. All rights reserved.
 </footer>
 
 </body>
